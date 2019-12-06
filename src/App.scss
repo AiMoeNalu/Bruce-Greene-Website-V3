@@ -1,0 +1,18 @@
+@import './Assets/Sass/variables.scss';
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    background-color: $tertiary-color;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10% 90%;
+    grid-template-areas: 
+    "h1 h2 h3 h4 h5 h6 h7 h8 h9 h10 h11 h12"
+    "p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12";
+}
