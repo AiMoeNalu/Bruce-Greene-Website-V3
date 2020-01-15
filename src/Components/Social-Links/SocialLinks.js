@@ -8,8 +8,15 @@ const SocialLinks = () => {
     return (
         <Fragment>
             {
-                SOCIAL_ACCOUNT.icons.map(icon => <img className='social-icons' src={icon}/>)
-            }
+                SOCIAL_ACCOUNT.map(({platform, link, icon, key}) => 
+                <img 
+                    className='social-icons clickable'
+                    src={icon} 
+                    alt={platform} 
+                    key={key}
+                    onClick={() => window.open(`${link}`, "_blank")}
+                    />
+            )}
         </Fragment>
     );
 };

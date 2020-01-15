@@ -5,6 +5,7 @@ body {
   padding: 0;
   overflow: hidden;
   background-color: $background-color;
+  font-family: $main-font;
 }
 
 .App {
@@ -15,7 +16,7 @@ body {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(12, [col] 1fr);
-  grid-template-rows: [header-start] 10% [header-end page-start] auto [page-end];
+  grid-template-rows: [header-start] max-content [header-end page-start] auto [page-end];
 
   &::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);

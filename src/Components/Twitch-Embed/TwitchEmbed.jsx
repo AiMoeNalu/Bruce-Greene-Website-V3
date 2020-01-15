@@ -10,7 +10,7 @@ const TwitchEmbed = () =>(
             url='https://www.twitch.tv/brucegreene'
             width='100%'
             height='100%'
-            volume='null'
+            volume={null}
             muted
         />
     </div>
