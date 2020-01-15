@@ -6,4 +6,7 @@
     grid-row-end: header-end;
     grid-column: col / span 12;
     border: $layout-border-testing;
+    
+    display: flex;
+    align-items: center;
 }
