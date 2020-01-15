@@ -1,19 +1,37 @@
-@import './Assets/Sass/variables.scss';
+@import "./Assets/Sass/variables.scss";
 
 body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .App {
-    width: 100vw;
-    height: 100vh;
-    background-color: $tertiary-color;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 10% 90%;
-    grid-template-areas: 
-    "h1 h2 h3 h4 h5 h6 h7 h8 h9 h10 h11 h12"
-    "p1 p2 p3 p4 p5 p6 p7 p8 p9 p10 p11 p12";
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: $background-color;
+    border-radius: 10px;
+  }
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: $background-color;
+  }
+  &::-webkit-scrollbar-thumb
+  {
+      border-radius: 10px;
+      background-color: $background-color;
+      background-image: -webkit-linear-gradient(top,
+                                                rgb(64, 214, 84) 0%,
+                                                rgb(64, 214, 84) 50%,
+                                                rgb(64, 214, 84)51%,
+                                                rgb(64, 214, 84) 100%);
+  }
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: $background-color;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(12, [col] 1fr);
+  grid-template-rows: [header-start] 15% [header-end page-start] auto [page-end];
 }

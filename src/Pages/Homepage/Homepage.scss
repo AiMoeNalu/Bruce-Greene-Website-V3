@@ -1,0 +1,36 @@
+@import '../../Assets/Sass/variables.scss';
+
+#homepage{
+    color: white;
+    grid-column: col / span 12;
+    grid-row-start: page-start;
+    grid-row-end: page-end;
+    grid-template-columns: repeat(12, [hcol] 1fr);
+    grid-template-rows: repeat(3, [hrow] auto);
+    display: grid;
+    grid-gap: 10px;
+    div.row1{
+        grid-row: hrow;
+        grid-column: hcol / span 12;
+        border: $layout-border-testing;
+        display: grid;
+        grid-template-columns: repeat(12, [hr1col] 1fr);
+        #twitch-embed{ grid-column: hr1col / span 9;}
+        #donate-form{ 
+            padding: 10px;
+            margin-left: 10px;
+            grid-column: hr1col 2 / span 12; 
+            border: $layout-border-testing;
+        }
+    }
+    div.row2{
+        grid-row: hrow 2; 
+        grid-column: hcol / span 12;
+        border: $layout-border-testing;
+    }
+    div.row3{
+        grid-row: hrow 3;
+        grid-column: hcol / span 12;
+        border: $layout-border-testing;
+    }
+}

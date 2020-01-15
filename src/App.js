@@ -5,6 +5,9 @@ import {
 } from 'react-router-dom';
 import './App.scss';
 
+import Header from './Components/Header/Header';
+import Homepage from './Pages/Homepage/Homepage';
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -17,11 +20,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Header/>
         <Router>
           <Fragment>
-
-            {/*<Route exact path='/' component=''/>*/}
-            
+            <Route exact path='/' component={Homepage}/>
           </Fragment>
         </Router>
       </div>

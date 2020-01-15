@@ -1,0 +1,9 @@
+@import '../../Assets/Sass/variables.scss';
+
+#header{
+    color: white;
+    grid-row-start: header-start;
+    grid-row-end: header-end;
+    grid-column: col / span 12;
+    border: $layout-border-testing;
+}
