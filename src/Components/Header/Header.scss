@@ -2,6 +2,7 @@
 
 #header{
     color: white;
+    margin: 5px 8px 0;
     grid-row-start: header-start;
     grid-row-end: header-end;
     grid-column: col / span 12;
@@ -30,5 +31,12 @@
         color: inherit;
         text-decoration: none;
         font-size: 1.75em;
+        .option{
+            transition: all .2s ease-in-out;
+        }
+        .option:hover{
+            color: limegreen;
+            transform: scale(1.5);
+        }
     }
 }

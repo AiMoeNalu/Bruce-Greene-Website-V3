@@ -21,13 +21,13 @@ const Header = (props) => {
             </div>
             <div className='right links'>
                 <NavLink exact to='/donate'>
-                    Donate
+                    <span className='option'>Donate</span>
                 </NavLink>
                 <NavLink exact to='/shop'>
-                    Shop
+                    <span className='option'>Shop</span>
                 </NavLink>
                 <NavLink exact to='/login'>
-                    Login
+                    <span className='option'>Login</span>
                 </NavLink>
             </div>
         </div>

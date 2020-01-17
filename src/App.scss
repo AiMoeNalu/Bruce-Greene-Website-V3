@@ -6,35 +6,33 @@ body {
   overflow: hidden;
   background-color: $background-color;
   font-family: $main-font;
-}
-
-.App {
-  margin: 10px;
-  width: 100vw;
-  height: 100vh;
-  overflow-y: scroll;
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(12, [col] 1fr);
-  grid-template-rows: [header-start] max-content [header-end page-start] auto [page-end];
-
-  &::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
-    background-color: $background-color;
-    border-radius: 10px;
-  }
-  &::-webkit-scrollbar {
-    width: 10px;
-    background-color: $background-color;
-  }
-  &::-webkit-scrollbar-thumb
-  {
-      border-radius: 10px;
+  .App {
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(12, [col] 1fr);
+    grid-template-rows: [header-start] max-content [header-end page-start] auto [page-end];
+  
+    &::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
       background-color: $background-color;
-      background-image: -webkit-linear-gradient(top,
-                                                rgb(64, 214, 84) 0%,
-                                                rgb(64, 214, 84) 50%,
-                                                rgb(64, 214, 84)51%,
-                                                rgb(64, 214, 84) 100%);
+      border-radius: 10px;
+    }
+    &::-webkit-scrollbar {
+      width: 10px;
+      background-color: $background-color;
+    }
+    &::-webkit-scrollbar-thumb
+    {
+        border-radius: 10px;
+        background-color: $background-color;
+        background-image: -webkit-linear-gradient(top,
+                                                  rgb(64, 214, 84) 0%,
+                                                  #40d654 50%,
+                                                  rgb(64, 214, 84)51%,
+                                                  rgb(64, 214, 84) 100%);
+    }
   }
 }
