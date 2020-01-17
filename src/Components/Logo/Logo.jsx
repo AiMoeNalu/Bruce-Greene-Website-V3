@@ -1,12 +1,12 @@
 import React from 'react';
 import './Logo.scss';
 
-import GreenBruceGreene from '../../Assets/Images/SVG/Logos/GreenBruceGreene.svg';
+import VibrantGreenLogo from '../../Assets/Images/SVG/Logos/VibrantGreenLogo.svg';
 
 const Logo = () => (
     <img 
         className='logo'
-        src={GreenBruceGreene}
+        src={VibrantGreenLogo}
         alt='Logo'
         />
 );

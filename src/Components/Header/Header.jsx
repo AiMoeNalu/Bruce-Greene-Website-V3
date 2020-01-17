@@ -4,7 +4,10 @@ import {
 } from 'react-router-dom';
 import './Header.scss';
 
-import SocialLinks from '../Social-Links/SocialLinks';
+import MENU_OPTIONS from '../../Assets/Data/MenuOptions/MenuOptions';
+import SOCIAL_ACCOUNT from '../../Assets/SocialMedia/Accounts';
+
+import HorizontalList from '../Horizontal-List/HorizontalList';
 import Logo from '../Logo/Logo';
 
 const Header = (props) => {
@@ -12,7 +15,7 @@ const Header = (props) => {
     <Fragment>
         <div id='header'>
             <div className='left'>
-                <SocialLinks/>
+                <HorizontalList type='icon' array={SOCIAL_ACCOUNT} grow={true}/>
             </div>
             <div className='center'>
                 <NavLink exact to='/'>
@@ -20,15 +23,7 @@ const Header = (props) => {
                 </NavLink>
             </div>
             <div className='right links'>
-                <NavLink exact to='/donate'>
-                    <span className='option'>Donate</span>
-                </NavLink>
-                <NavLink exact to='/shop'>
-                    <span className='option'>Shop</span>
-                </NavLink>
-                <NavLink exact to='/login'>
-                    <span className='option'>Login</span>
-                </NavLink>
+                <HorizontalList type='options' array={MENU_OPTIONS} grow={true}/>
             </div>
         </div>
     </Fragment>
