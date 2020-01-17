@@ -6,9 +6,11 @@ To Do:
 
 In Progress:
     ☐ Header and Social Icons/Links
-        ☐ Create a Component for Menu Options
-            ☐ Turn into <ul> with .grow like with the social Options
-                ☐ Make .grow a more global SASS class as well as .clickable
+        ✘ Create a Component for Menu Options @cancelled (1/17/2020, 2:06:36 PM)
+            ✔ Turn into <ul> with .grow like with the social Options @done (1/17/2020, 2:06:19 PM)
+                ✔ Make .grow a more global SASS class as well as .clickable @done (1/17/2020, 2:05:52 PM)
+        ☐ Horizontal-List component className and ...otherProps to be adjusted
+    ☐ Post dev build to GitHub for Bruce
 
 Completed:
     
