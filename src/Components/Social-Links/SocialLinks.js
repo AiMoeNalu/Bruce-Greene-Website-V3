@@ -7,16 +7,20 @@ const SocialLinks = () => {
 
     return (
         <Fragment>
-            {
-                SOCIAL_ACCOUNT.map(({platform, link, icon, key}) => 
-                <img 
-                    className='social-icons clickable'
-                    src={icon} 
-                    alt={platform} 
-                    key={key}
-                    onClick={() => window.open(`${link}`, "_blank")}
-                    />
-            )}
+            <ul className='horizontal-list'>
+                {
+                    SOCIAL_ACCOUNT.map(({platform, link, icon, key}) => 
+                    <li className='grow'>
+                        <img 
+                            className='social-icons clickable'
+                            src={icon} 
+                            alt={platform} 
+                            key={key}
+                            onClick={() => window.open(`${link}`, "_blank")}
+                        />
+                    </li>
+                )}
+            </ul>
         </Fragment>
     );
 };

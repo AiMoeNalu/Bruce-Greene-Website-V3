@@ -6,6 +6,9 @@ To Do:
 
 In Progress:
     ☐ Header and Social Icons/Links
+        ☐ Create a Component for Menu Options
+            ☐ Turn into <ul> with .grow like with the social Options
+                ☐ Make .grow a more global SASS class as well as .clickable
 
 Completed:
     
