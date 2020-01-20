@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Bruce-Greene-Website-V3/precache-manifest.1d262295bfbdad33cd985ad801eb24d0.js"
+  "/Bruce-Greene-Website-V3/precache-manifest.45db698761714c619b34d30255a4af5c.js"
 );
 
 self.addEventListener('message', (event) => {
