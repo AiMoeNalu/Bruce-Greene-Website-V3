@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/Bruce-Greene-Website-V3/static/css/main.b0b1dd11.chunk.css",
-    "main.js": "/Bruce-Greene-Website-V3/static/js/main.d71165c3.chunk.js",
-    "main.js.map": "/Bruce-Greene-Website-V3/static/js/main.d71165c3.chunk.js.map",
+    "main.css": "/Bruce-Greene-Website-V3/static/css/main.97617ea5.chunk.css",
+    "main.js": "/Bruce-Greene-Website-V3/static/js/main.85cef4f6.chunk.js",
+    "main.js.map": "/Bruce-Greene-Website-V3/static/js/main.85cef4f6.chunk.js.map",
     "runtime-main.js": "/Bruce-Greene-Website-V3/static/js/runtime-main.f682794b.js",
     "runtime-main.js.map": "/Bruce-Greene-Website-V3/static/js/runtime-main.f682794b.js.map",
-    "static/js/2.28a09539.chunk.js": "/Bruce-Greene-Website-V3/static/js/2.28a09539.chunk.js",
-    "static/js/2.28a09539.chunk.js.map": "/Bruce-Greene-Website-V3/static/js/2.28a09539.chunk.js.map",
+    "static/js/2.ca033856.chunk.js": "/Bruce-Greene-Website-V3/static/js/2.ca033856.chunk.js",
+    "static/js/2.ca033856.chunk.js.map": "/Bruce-Greene-Website-V3/static/js/2.ca033856.chunk.js.map",
     "index.html": "/Bruce-Greene-Website-V3/index.html",
-    "precache-manifest.326129de741f81f8bbba1f29c7804440.js": "/Bruce-Greene-Website-V3/precache-manifest.326129de741f81f8bbba1f29c7804440.js",
+    "precache-manifest.1d262295bfbdad33cd985ad801eb24d0.js": "/Bruce-Greene-Website-V3/precache-manifest.1d262295bfbdad33cd985ad801eb24d0.js",
     "service-worker.js": "/Bruce-Greene-Website-V3/service-worker.js",
-    "static/css/main.b0b1dd11.chunk.css.map": "/Bruce-Greene-Website-V3/static/css/main.b0b1dd11.chunk.css.map",
-    "static/js/2.28a09539.chunk.js.LICENSE": "/Bruce-Greene-Website-V3/static/js/2.28a09539.chunk.js.LICENSE",
+    "static/css/main.97617ea5.chunk.css.map": "/Bruce-Greene-Website-V3/static/css/main.97617ea5.chunk.css.map",
+    "static/js/2.ca033856.chunk.js.LICENSE": "/Bruce-Greene-Website-V3/static/js/2.ca033856.chunk.js.LICENSE",
     "static/media/Instagram.svg": "/Bruce-Greene-Website-V3/static/media/Instagram.c9b542c9.svg",
     "static/media/Twitch.svg": "/Bruce-Greene-Website-V3/static/media/Twitch.734cc0b7.svg",
     "static/media/Twitter.svg": "/Bruce-Greene-Website-V3/static/media/Twitter.6c2a8839.svg",
-    "static/media/VibrantGreenLogo.svg": "/Bruce-Greene-Website-V3/static/media/VibrantGreenLogo.026b08ee.svg",
+    "static/media/VibrantGreenLogo.svg": "/Bruce-Greene-Website-V3/static/media/VibrantGreenLogo.8f1b83ae.svg",
     "static/media/Youtube.svg": "/Bruce-Greene-Website-V3/static/media/Youtube.0e9234f1.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.f682794b.js",
-    "static/js/2.28a09539.chunk.js",
-    "static/css/main.b0b1dd11.chunk.css",
-    "static/js/main.d71165c3.chunk.js"
+    "static/js/2.ca033856.chunk.js",
+    "static/css/main.97617ea5.chunk.css",
+    "static/js/main.85cef4f6.chunk.js"
   ]
 }
