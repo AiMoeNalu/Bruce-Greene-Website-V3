@@ -18,7 +18,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    window.location.pathname.replace("/Bruce-Greene-Website-V3/", "")
+    window.location.pathname.replace("/Bruce-Greene-Website-V3/", "/")
   }
 
   render() {
