@@ -9,7 +9,7 @@ import { NavLink } from 'react-router-dom';
 * @param grow : If grow === true, option will grow on hover
 */
 
-const HorizontalList = ({array, type, grow}) =>{
+const HorizontalList = ({array, type, grow=true}) =>{
     return(
         <Fragment>
             <ul className='horizontal-list'>

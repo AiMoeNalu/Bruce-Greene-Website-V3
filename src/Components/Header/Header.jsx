@@ -15,7 +15,7 @@ const Header = (props) => {
     <Fragment>
         <div id='header'>
             <div className='left'>
-                <HorizontalList type='icon' array={SOCIAL_ACCOUNT} grow={true}/>
+                <HorizontalList type='icon' array={SOCIAL_ACCOUNT} grow/>
             </div>
             <div className='center'>
                 <NavLink exact to='/'>
@@ -23,7 +23,7 @@ const Header = (props) => {
                 </NavLink>
             </div>
             <div className='right links'>
-                <HorizontalList type='options' array={MENU_OPTIONS} grow={true}/>
+                <HorizontalList type='options' array={MENU_OPTIONS} grow/>
             </div>
         </div>
     </Fragment>

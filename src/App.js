@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  BrowserRouter as Router, 
+  Switch,
   Route
 } from 'react-router-dom';
 import './App.scss';
@@ -17,13 +17,17 @@ class App extends Component {
     }
   }
 
+  componentDidMount(){
+    window.location.pathname.replace("/Bruce-Greene-Website-V3/", "")
+  }
+
   render() {
     return (
       <div className="App">
-        <Router>
           <Header/>
-          <Route exact path='/' component={Homepage}/>
-        </Router>
+          <Switch>
+            <Route exact path='/' component={Homepage}/>
+          </Switch>
       </div>
     );
   }
