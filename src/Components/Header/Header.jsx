@@ -11,6 +11,7 @@ import HorizontalList from '../Horizontal-List/HorizontalList';
 import Logo from '../Logo/Logo';
 
 const Header = (props) => {
+   
     return(
     <Fragment>
         <div id='header'>

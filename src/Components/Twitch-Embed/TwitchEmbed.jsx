@@ -6,6 +6,7 @@ import ReactPlayer from 'react-player'
 const TwitchEmbed = () =>(
     <div className='player-wrapper'>
         <ReactPlayer
+            playing={true}
             className='react-player'
             url='https://www.twitch.tv/brucegreene'
             width='100%'

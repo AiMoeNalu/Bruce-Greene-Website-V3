@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-  Switch,
   Route
 } from 'react-router-dom';
 import './App.scss';
@@ -13,21 +12,15 @@ class App extends Component {
     super(props);
 
     this.state = {
-      userSignedIn: false
+      userSignedIn: true
     }
   }
-
-  componentDidMount(){
-    window.location.pathname.replace("/Bruce-Greene-Website-V3/", "/")
-  }
-
+  
   render() {
     return (
       <div className="App">
-          <Header/>
-          <Switch>
-            <Route exact path='/' component={Homepage}/>
-          </Switch>
+          <Route path='/' component={Header}/>
+          <Route exact path='/' component={Homepage}/>
       </div>
     );
   }

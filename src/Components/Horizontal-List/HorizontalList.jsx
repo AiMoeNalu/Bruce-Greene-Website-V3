@@ -15,18 +15,18 @@ const HorizontalList = ({array, type, grow=true}) =>{
             <ul className='horizontal-list'>
                 {
                     array.map( item => 
-                        <li className={grow === true ? 'grow' : null}>
+                        <li className={grow === true ? 'grow' : null} key={item.key}>
                             {
                                 type === 'icon' ? 
                                     <img 
                                         className='social-icons clickable'
                                         src={item.icon} 
                                         alt={item.platform}
-                                        key={item.key}
                                         onClick={() => window.open(`${item.link}`, "_blank")}
-                                    /> :
-                                    <NavLink exact to={`/${item.toLowerCase()}`}>
-                                        <span className='option'>{item}</span>
+                                    /> 
+                                    :
+                                    <NavLink exact to={`/${item.option.toLowerCase()}`}>
+                                        <span className='option'>{item.option}</span>
                                     </NavLink>
                             }
                         </li>
