@@ -9,7 +9,7 @@ import { NavLink } from 'react-router-dom';
 * @param grow : If grow === true, option will grow on hover
 */
 
-const HorizontalList = ({array, type, grow=true}) =>{
+const HorizontalList = ({array, type, grow=true, ...otherProps}) =>{
     return(
         <Fragment>
             <ul className='horizontal-list'>
@@ -19,14 +19,14 @@ const HorizontalList = ({array, type, grow=true}) =>{
                             {
                                 type === 'icon' ? 
                                     <img 
-                                        className='social-icons clickable'
+                                        {...otherProps}
                                         src={item.icon} 
                                         alt={item.platform}
                                         onClick={() => window.open(`${item.link}`, "_blank")}
                                     /> 
                                     :
                                     <NavLink exact to={`/${item.option.toLowerCase()}`}>
-                                        <span className='option'>{item.option}</span>
+                                        <span {...otherProps}>{item.option}</span>
                                     </NavLink>
                             }
                         </li>
