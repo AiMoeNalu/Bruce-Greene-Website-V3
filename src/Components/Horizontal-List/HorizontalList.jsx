@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
 import './HorizontalList.scss';
 
 import { NavLink } from 'react-router-dom';
@@ -9,7 +10,7 @@ import { NavLink } from 'react-router-dom';
 * @param grow : If grow === true, option will grow on hover
 */
 
-const HorizontalList = ({array, type, grow=true, ...otherProps}) =>{
+const HorizontalList = ({array, type, grow=false, ...otherProps}) =>{
     return(
         <Fragment>
             <ul className='horizontal-list'>
@@ -36,5 +37,11 @@ const HorizontalList = ({array, type, grow=true, ...otherProps}) =>{
         </Fragment>
     )
 };
+
+HorizontalList.propTypes = {
+    array: PropTypes.array.isRequired,
+    type: PropTypes.string.isRequired,
+    grow: PropTypes.bool
+}
 
 export default HorizontalList;

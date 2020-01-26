@@ -19,7 +19,7 @@ const Header = (props) => {
                 <HorizontalList 
                     type='icon' 
                     array={SOCIAL_ACCOUNT} 
-                    grow 
+                    grow
                     className='social-icons clickable'
                 />
             </div>
